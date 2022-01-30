@@ -1,12 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-function FeedbackItem() {
+function FeedbackItem({item}) {
   return (
     <div className='card'>
-      <div className="num-display">10</div>
-      <div className="text-display">
-        Example of a feedback item
-      </div>
+      <div className="num-display">{item.rating}</div>
+      <div className="text-display">{item.text}</div>
     </div>
   )
 }
