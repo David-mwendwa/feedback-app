@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Card from '../components/shared/Card'
 
 function AboutPage() {
@@ -9,7 +10,7 @@ function AboutPage() {
         <p>This is a react app to leave feedbacj for a product or service</p>
         <p>Version: 1.0.0</p>
 
-        <p><a href="/">Back to me</a></p>
+        <p><Link to="/">Back to me</Link></p>
       </div>
     </Card>
   )
